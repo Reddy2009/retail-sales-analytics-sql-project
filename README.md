@@ -52,21 +52,6 @@ CREATE TABLE retail_sales (
 );
 ```
 
-```
--- Inserting Data from .csv file through Bulk Insert
---  Truncate table data if already exists
-TRUNCATE TABLE retail_sales
-GO
--- Insert data from .csv file
-BULK INSERT retail_sales
-FROM 'D:\Users\bharg\SQL\SQL_Practice_projects\Sales_Retail_p1\Retail_Sales_Analysis.csv'
-WITH (
-		FIRSTROW = 2,
-		FIELDTERMINATOR = ',',
-		TABLOCK
-);
-```
-
 ### 2. Data Exploration & Cleaning
 
 - **Record Count**: Determine the total number of records in the dataset.
