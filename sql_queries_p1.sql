@@ -1,4 +1,5 @@
 
+-- This is to make sure the Database does not exist. If exists, we drop the database before creating Database
 IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'SQL_Project_1')
 BEGIN
 	ALTER DATABASE SQL_Project_1 SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
@@ -7,15 +8,10 @@ END;
 GO
 
 -- Create Database for SQL Retail Sales Analysis
-
 CREATE DATABASE SQL_Project_1
 GO
 
-USE SQL_Project_1
-GO
-
-
--- CREATE TABLE
+-- Create Table
 DROP TABLE IF EXISTS retail_sales;
 CREATE TABLE retail_sales (
 	transactions_id INT PRIMARY KEY,
@@ -30,9 +26,7 @@ CREATE TABLE retail_sales (
 	cogs FLOAT,
 	total_sale FLOAT
 );
-
 -- Inserting Data from .csv file through Bulk Insert
-
 --  Truncate table data if already exists
 TRUNCATE TABLE retail_sales
 GO
