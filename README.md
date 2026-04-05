@@ -196,7 +196,7 @@ FROM
 WHERE sale_rank = 1;
 ```
 
-8. **Write a SQL query to find the top 5 customers based on the highest total sales **:
+8. **Write a SQL query to find the top 5 customers based on the highest total sales**:
 ```sql
 SELECT TOP 5
 	customer_id,
@@ -260,6 +260,6 @@ This project serves as a comprehensive introduction to SQL for data analysts, co
 3. **Run the Queries**: Use the SQL queries provided in the `analysis_queries.sql` file to perform your analysis.
 4. **Explore and Modify**: Feel free to modify the queries to explore different aspects of the dataset or answer additional business questions.
 
-## Author - Bhargava Redyy G.
+## Author - Bhargava Reddy Guda
 
 This project is part of my learning journey and highlights my SQL skills for data analysis. If you have suggestions or want to collaborate, feel free to connect!
