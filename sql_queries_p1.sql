@@ -124,8 +124,7 @@ FROM retail_sales
 WHERE sale_date = '2022-11-05';
 
 
--- Q.2 Write a SQL Query to retrieve all transactions where the category is 'Clothing' 
--- and quantity sold is alteast 4 in the month of Nov-2022
+-- Q.2 Write a SQL Query to retrieve all transactions where the category is 'Clothing' and quantity sold is alteast 4 in the month of Nov-2022
 
 
 SELECT
